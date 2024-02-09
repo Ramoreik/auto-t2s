@@ -31,4 +31,11 @@ curl https://10.100.1.100
 
 Now the specified routes should be accessible.  
 
+## Installation
+
+```bash
+go get github.com/vishvananda/netlink
+go get github.com/xjasonlyu/tun2socks
+```
+
 
