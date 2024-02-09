@@ -2,7 +2,7 @@
 
 ## What ?
 
-This program is basically a wrapper around the great tun2socks project, it also uses the netlink module.  
+This program is basically a wrapper around the great `tun2socks` project, it also uses the `netlink` module.  
 > https://github.com/xjasonlyu/tun2socks  
 > https://github.com/vishvananda/netlink  
 
@@ -36,6 +36,7 @@ Now the specified routes should be accessible.
 ```bash
 go get github.com/vishvananda/netlink
 go get github.com/xjasonlyu/tun2socks
+go build .
 ```
 
 

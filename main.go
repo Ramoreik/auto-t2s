@@ -1,16 +1,16 @@
 package main
 
 import (
-	"flag"
+  "flag"
   "net"
-	"fmt"
-	"os"
-	"os/signal"
-	"syscall"
+  "fmt"
+  "os"
+  "os/signal"
+  "syscall"
   "strings"
 
-	"github.com/vishvananda/netlink"
-	"github.com/xjasonlyu/tun2socks/v2/engine"
+  "github.com/vishvananda/netlink"
+  "github.com/xjasonlyu/tun2socks/v2/engine"
 )
 
 var (
