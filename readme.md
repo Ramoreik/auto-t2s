@@ -47,13 +47,13 @@ Usage of ./auto-t2s:
         Set timeout for each UDP session
 ```
 
-routes file example:
+routes file example:  
 ```
 10.0.2.1/24
 10.4.1.1/24
 ```
 
-It runs just like normal tun2socks:
+It runs just like normal tun2socks:  
 ```
 auto-t2s -interface wlan0 -mtu 1500 -proxy socks5://localhost:8081 -device tun0 -routes-file './routes'
 ```
@@ -70,12 +70,12 @@ curl https://10.100.1.100
 ```
 
 Now the specified routes should be accessible.  
-The caveat is that since the tool uses netlink it needs higher privileges.
+The caveat is that since the tool uses netlink it needs higher privileges.  
 
 ## Disclaimer: 
 
-This could probably have been achieved with a `-tun-pre-up` command pointing to a script.
-I wanted to play with `tun2socks`, `netlink` and `gvisor` , I feel like there is potential to learn these projects to create interesting tools.
+This could probably have been achieved with a `-tun-post-up` command pointing to a script.  
+I wanted to play with `tun2socks`, `netlink` and `gvisor` , I feel like there is potential to learn these projects to create interesting tools.  
 
 ## Installation
 
